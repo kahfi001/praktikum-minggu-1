@@ -1,0 +1,34 @@
+// membuat billing warnet
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+	int totkeseluruhan,totjam,jam,totmenit,menit,totdetik,detik;
+	cout<<"membuat billing warnet \n\n";
+	cout<<"mulai jam  berapa : ";cin>>jam;
+	cout<<"mulai menit berapa :";cin>>menit;
+	cout<<"mulai detik berapa :";cin>>detik;
+		
+	cout<<"lama pemakaian :"<<jam<<" jam "<<menit<<" menit "<<detik<<" detik "<<endl;
+	
+	totjam=jam*5000;
+	totmenit=menit*5000/60;
+	totdetik=detik*5000/3600;
+	
+	cout<<"jumlah uang dibayar : Rp.";
+	totkeseluruhan=totjam+totmenit+totdetik;
+	cout<<totkeseluruhan;
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+}
